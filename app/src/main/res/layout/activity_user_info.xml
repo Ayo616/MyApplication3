@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Activity.UserInfo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme.AppBarOverlay"
+            android:id="@+id/collasping"
+
+            >
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/colorPrimary"
+                app:navigationIcon="@mipmap/ic_arrow_back_white_24dp"
+                app:popupTheme="@style/AppTheme.PopupOverlay"
+                android:titleTextAppearance="@android:style/TextAppearance.Material"
+                />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/include"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:transitionName="shareview">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="welcome to my home"
+                android:textColor="@color/text_icon"
+                android:id="@+id/textView"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/info_head"
+                android:layout_marginLeft="10dp" />
+
+            <com.github.siyamed.shapeimageview.CircularImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/meizhi"
+                android:id="@+id/info_head"
+                />
+        </RelativeLayout>
+
+
+
+
+
+
+        <include
+            layout="@layout/content_user_info"
+            android:id="@+id/include" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="clip_horizontal|right"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="156dp"
+        android:src="@android:drawable/ic_dialog_email" />
+
+</android.support.design.widget.CoordinatorLayout>

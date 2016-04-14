@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightPrimary"
+    tools:context="yan.myapplication.Fragment.NewsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        card_view:cardCornerRadius="6dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            >
+
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="I never forget the last summer holiday,It is a wonderful Activity"
+                android:textSize="16dp"
+                android:titleTextAppearance="@android:style/TextAppearance.Material"
+                android:id="@+id/title_news"
+                android:layout_marginLeft="16dp"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="Jonny"
+                android:layout_below="@+id/title_news"
+                android:layout_alignLeft="@+id/title_news"
+                android:layout_marginTop="5dp"
+                android:id="@+id/author_cardview"
+                />
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@mipmap/meizhi"
+                android:layout_toRightOf="@+id/title_news"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+</RelativeLayout>
